@@ -1,0 +1,11 @@
+{
+	"name": "reversed-proxy",
+	"main": "src/index.js",
+	"compatibility_date": "2026-10-01",
+	"vars": {
+		"TARGET_HOST": "api.v4f.info"
+	},
+	"observability": {
+		"enabled": true
+	}
+}

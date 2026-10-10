@@ -1,0 +1,21 @@
+{
+	"name": "reversed-proxy",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "node server/main.js",
+		"test": "vitest run && npm run test:node",
+		"test:node": "node --test \"test/node/*.check.mjs\""
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-plugin": "^1.0.0",
+		"vitest": "~4.1.0",
+		"wrangler": "^4"
+	}
+}

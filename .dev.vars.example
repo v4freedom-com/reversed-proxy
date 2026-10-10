@@ -1,0 +1,4 @@
+# Copy to .dev.vars for `wrangler dev`. Never commit the real file.
+TARGET_HOST=api.v4f.info
+# Optional shared secret; when set, clients must send it as the x-proxy-key header.
+PROXY_KEY=

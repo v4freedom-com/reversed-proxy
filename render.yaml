@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: reversed-proxy
+    runtime: docker
+    plan: free
+    healthCheckPath: /__health
+    envVars:
+      - key: TARGET_HOST
+        value: api.v4f.info
+      # Optional. `sync: false` = value is entered in the Render dashboard, never stored here.
+      - key: PROXY_KEY
+        sync: false
