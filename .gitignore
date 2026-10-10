@@ -174,3 +174,4 @@ dist
 # JetBrains
 .idea/
 *.iml
+scripts/.localcommand

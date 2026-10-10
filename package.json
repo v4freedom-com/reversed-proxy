@@ -11,7 +11,8 @@
 		"dev": "wrangler dev",
 		"start": "node server/main.js",
 		"test": "vitest run && npm run test:node",
-		"test:node": "node --test \"test/node/*.check.mjs\""
+		"test:node": "node --test \"test/node/*.check.mjs\"",
+		"check:policy": "bash scripts/check-policy.sh"
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-plugin": "^1.0.0",
